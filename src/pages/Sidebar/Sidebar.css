@@ -15,6 +15,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 *,
 *:before,
 *:after {
@@ -52,6 +53,7 @@ h6 {
   height: 550px;
   overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .slider {
     flex-direction: column;
@@ -59,6 +61,7 @@ h6 {
     height: 250px;
   }
 }
+
 .middle {
   position: absolute;
   top: 50%;
@@ -75,6 +78,7 @@ h6 {
   align-items: center;
   display: flex;
 }
+
 @media (max-width: 768px) {
   .navigation {
     width: 100%;
@@ -93,10 +97,12 @@ h6 {
   border-radius: 10px;
   transition: all 0.4s ease;
 }
+
 .bar:hover {
   opacity: 0.8;
   transform: scale(1.1);
 }
+
 input[name='r'] {
   position: absolute;
   visibility: hidden;
@@ -134,13 +140,6 @@ input[name='r'] {
   margin-left: -75%;
 }
 
-.images {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin: 4% auto;
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -151,6 +150,7 @@ input[name='r'] {
   right: 0;
   z-index: 1000;
 }
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -184,9 +184,127 @@ input[name='r'] {
   text-decoration: none;
 }
 
+.main_sidebar_container {
+  display: flex;
+}
+
+
+.main_container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.images {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 4% auto;
+}
+
+.sidebar_container {
+  width: 30%;
+  max-width: 300px;
+  height: 280vh;
+  margin: 0 auto;
+}
+
+.sidebar_col {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+.sidebar_image {
+  width: 300px;
+  height: 30vh;
+  padding: 5px;
+}
+
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  .sidebar_image {
+    width: 150px;
+    height: 15vh;
+  }
+}
+
+.about_me_header {
+  font-family: 'Playfair Display', serif;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.sidebar_social_media {
+  width: 100%;
+  padding: 5px;
+}
+
+.sidebar_social_media_icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.fb_icon i {
+  padding-right: 10px;
+  color: rgb(199, 189, 189);
+}
+
+.inst_icon i {
+  padding-right: 10px;
+  color: rgb(199, 189, 189);
+}
+
+.pinterest_icon i {
+  padding-right: 10px;
+  color: rgb(199, 189, 189);
+}
+
+.top_posts_header {
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 30px;
+}
+
+.top_posts_item {
+  display: flex;
+}
+
+.top_posts_header {
+  font-size: 15px;
+}
+
+.circle_post i {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 10px;
+  font-size: 7px;
+  color: rgb(199, 189, 189);
+}
+
+.post_topic {
+  font-size: 15px;
+}
+
+.post_num_of_posts {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  padding-bottom: 2px;
+  color: rgb(199, 189, 189);
+}
+
+.banner_sidebar {
+  width: 300px;
+  height: 40vh;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .banner_sidebar {
+    width: 150px;
+    height: 20vh;
   }
 }
 
@@ -199,25 +317,18 @@ input[name='r'] {
 .photo_diary_main_header {
   color: rgb(139, 139, 139);
   margin: 1% auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .photo_diary_text_header {
   margin: 2% auto;
-  font-size: 25px;
   font-family: 'Playfair Display', serif;
-}
-@media (max-width: 768px) {
-  .photo_diary_text_header {
-    flex-direction: column;
-    font-size: 2px;
-    text-align: center;
-  }
 }
 
 .photo_diary_text {
   width: 100%;
-  margin: 4% auto;
+  margin: 5% auto;
+  padding-bottom: 40px;
   font-family: 'Playfair Display', serif;
 }
 
@@ -242,6 +353,7 @@ input[name='r'] {
   width: 100%;
   height: 100vh;
 }
+
 @media (max-width: 768px) {
   .photodiarysection {
     flex-direction: column;
@@ -257,6 +369,7 @@ input[name='r'] {
   padding: 30px 15px;
   margin: 2% auto;
 }
+
 @media (max-width: 768px) {
   .cards_col {
     flex-direction: column;
@@ -269,7 +382,6 @@ input[name='r'] {
 }
 
 .images_box_header {
-  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   padding-left: 30px;
   padding-top: 20px;
@@ -297,7 +409,14 @@ input[name='r'] {
 }
 
 .card_text {
-  font-family: 'Playfair Display', serif;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .card_text {
+    padding: 20px;
+  }
 }
 
 .comments_container {
@@ -333,6 +452,7 @@ input[name='r'] {
 .user_name_header {
   font-size: 15px;
 }
+
 .user_comment_text {
   font-size: 12px;
 }
@@ -347,6 +467,7 @@ input[name='r'] {
   padding-top: 30px;
   display: flex;
 }
+
 .comments_input {
   width: 100%;
   width: 100%;
@@ -361,7 +482,7 @@ input[name='r'] {
 
 .social_media {
   width: 100%;
-  padding-bottom: 100px;
+  padding: 5px;
 }
 
 .social_media_col {
@@ -369,6 +490,7 @@ input[name='r'] {
   justify-content: end;
   align-items: center;
   margin: 2% auto;
+  padding-bottom: 80px;
 }
 
 .follow {
@@ -376,39 +498,41 @@ input[name='r'] {
   padding-right: 20px;
   color: rgb(199, 189, 189);
 }
+
 .social_media_icons {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
 .twitter_icon {
-  padding-right: 10px;
+  padding-right: 20px;
   color: rgb(199, 189, 189);
 }
 
 .fb_icon {
   padding-left: 10px;
-  padding-right: 10px;
-  color: rgb(199, 189, 189);
+  padding-right: 20px;
+  color: #333;
 }
 
 .google_icon {
-  padding-right: 10px;
+  padding-right: 20px;
   color: rgb(199, 189, 189);
 }
 
 .inst_icon {
-  padding-right: 10px;
+  padding-right: 20px;
   color: rgb(199, 189, 189);
 }
 
 .pinterest_icon {
-  padding-right: 10px;
+  padding-right: 20px;
   color: rgb(199, 189, 189);
 }
 
 .tumbler_icon {
-  padding-right: 10px;
+  padding-right: 20px;
   color: rgb(199, 189, 189);
 }
 
@@ -421,6 +545,7 @@ input[name='r'] {
   background-color: rgb(230, 230, 230);
   text-align: center;
 }
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -436,6 +561,7 @@ input[name='r'] {
   padding: 30px 30px;
   align-items: center;
 }
+
 @media (max-width: 768px) {
   .footer__details {
     flex-direction: column;
@@ -447,6 +573,7 @@ input[name='r'] {
   width: 100%;
   padding-left: 20px;
 }
+
 @media (max-width: 768px) {
   .footer_left_info {
     justify-content: center;
@@ -463,11 +590,17 @@ input[name='r'] {
   align-items: center;
   padding-right: 20px;
 }
+
 @media (max-width: 768px) {
   .footer_social_media_col {
     justify-content: center;
-    padding-right: 70px;
+    padding-right: 40px;
   }
+}
+
+.footer_social_media_icons {
+  display: flex;
+  text-align: right;
 }
 
 .footer_follow {
