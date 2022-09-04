@@ -165,6 +165,7 @@ input[name='r'] {
 }
 
 .header__logo {
+  font-family: 'Rajdhani', sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #333;
