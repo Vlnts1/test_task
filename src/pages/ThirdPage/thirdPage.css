@@ -199,7 +199,7 @@ input[name='r'] {
 .sidebar_container {
   width: 30%;
   max-width: 300px;
-  height: 310vh;
+  height: 280vh;
   margin: 0 auto;
 }
 
@@ -227,6 +227,7 @@ input[name='r'] {
   font-family: 'Playfair Display', serif;
   padding-top: 20px;
   font-size: 15px;
+
 }
 
 .sidebar_social_media {
